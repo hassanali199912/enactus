@@ -1,0 +1,545 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* My code*/
+    /* #regen Header*/
+    
+    #headernavbar {
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        background-color: transparent !important;
+    }
+    
+    #headernavbar a {
+        color: #fff !important;
+    }
+    
+    #collapseminubtn {
+        background-color: #fff;
+    }
+    
+    #headernavbar #navbarNavDropdown {
+        justify-items: flex-end;
+        flex-wrap: wrap;
+        place-content: center flex-end;
+        display: flex !important;
+    }
+    
+    #headernavbar #navbarNavDropdown a:hover {
+        color: #fbcd28 !important;
+    }
+    
+    header,
+    .carousel-contaner img,
+    .imgdiv1,
+    .imgdiv2,
+    .imgdiv3 {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .carousel-contaner .imgdiv1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/slider1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .carousel-contaner .imgdiv2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/slider2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .carousel-contaner .imgdiv3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/slider3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .carousel-contaner {
+        position: relative;
+    }
+    
+    .carousel-caption {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .carousel-caption h1,
+    .carousel-caption p {
+        color: #fff;
+        text-align: left;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 5rem;
+    }
+    
+    .carousel-caption h1 span {
+        color: #fbcd28;
+    }
+    
+    .carousel-caption p {
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+        width: 60%;
+        line-height: 1.6;
+    }
+    
+    nav {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    /* #endegen*/
+    /* #regen infosection*/
+    
+    section {
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    footer {
+        width: 100%;
+        min-height: 70vh;
+        background-color: #222;
+    }
+    
+    .infosection .grid {
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .infosection .textdiv h1 {
+        color: #222;
+    }
+    /* .infosection .textdiv h1::before {
+        display: flex;
+        content: "  ";
+        background-color: #fbcd28;
+        width: 100px;
+        height: 10px;
+        position: relative;
+        left: 7rem;
+        top: 1rem;
+        z-index: 1;
+    } */
+    
+    .infosection .textdiv span {
+        color: #fbcd28;
+    }
+    
+    .infosection .textdiv h1 {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+    
+    .infosection .textdiv h3 {
+        font-size: 1.2rem;
+        padding: 2rem 0;
+        font-weight: 700;
+    }
+    
+    .infosection .textdiv p {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .infosection .carddiv {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .infosection .carddiv .card {
+        width: 20rem;
+        padding: 1rem;
+        margin: 1rem 0;
+        min-height: 12rem;
+        background-color: #fbcd28;
+        box-shadow: 5px 5px 1px #222;
+        border-radius: 0;
+    }
+    
+    .infosection .carddiv .card:last-child {
+        align-self: flex-end;
+        background-color: #fff;
+    }
+    
+    .infosection .carddiv .card h1 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    
+    .infosection .carddiv .card p {
+        font-size: 1rem;
+        padding: 1rem 0;
+        line-height: 1.4;
+    }
+    /*#endegen*/
+    /* #regen projectsection*/
+    
+    .divcontent {
+        width: 90%;
+        border: 1px solid #222;
+        position: relative;
+        min-height: 90vh;
+        box-shadow: 1px 1px 10px #222;
+    }
+    
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    
+    .project-content h3 {
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+    
+    .project-content p {
+        font-size: 1.5rem;
+        line-height: 2;
+        opacity: 0.8;
+    }
+    
+    .project-content button {
+        padding: 1rem 0;
+        width: 200px;
+        background-color: #fff;
+        border: 1px solid #222;
+        transition: 0.5s ease;
+    }
+    
+    .project-content button:hover {
+        background-color: #fbcd28;
+        transform: scale(0.9);
+    }
+    
+    .divcontent img {
+        position: relative;
+        left: 10rem;
+        margin: 2rem 0;
+        height: 90vh;
+        box-shadow: 1px 1px 5px #222;
+    }
+    /*#endegen*/
+    /* #regen projectsection*/
+    
+    .committessection {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/committes.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .committessection .textheader {
+        text-align: center;
+        padding: 2rem;
+        font-size: 3rem;
+        color: #fff;
+    }
+    
+    .committessection .flex {
+        flex-wrap: wrap;
+    }
+    
+    .row:nth-Child(even) {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .row:nth-Child(odd) {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .committessection .haxcard {
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        background-color: #fbcd28;
+        width: 20rem;
+        height: 20rem;
+        margin: 1rem;
+    }
+    
+    .committessection .haxcard img {
+        display: block;
+        margin: 0rem auto;
+        width: 3rem;
+        padding-top: 2rem;
+    }
+    
+    .committessection .haxcard h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .committessection .haxcard p {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1rem;
+        line-height: 1.6;
+    }
+    /*#endegen*/
+    /* #regen Footer*/
+    
+    footer .row {
+        padding: 5rem;
+    }
+    
+    footer .col1 p {
+        color: #fff;
+        width: 90%;
+        padding: 2rem 0;
+        line-height: 1.6;
+        opacity: 0.7;
+        font-size: 1.1rem;
+    }
+    
+    footer .col1 ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    footer .col1 ul li {
+        padding-right: 1rem;
+    }
+    
+    footer .col1 ul li a {
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    footer .col2 h2 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem 0;
+    }
+    
+    footer .col2 ul {
+        list-style: none;
+        margin: 1rem;
+        opacity: 0.8;
+    }
+    
+    footer .col2 ul li {
+        padding: 1rem;
+    }
+    
+    footer .col2 ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+    
+    footer .col3 h2 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem 0;
+    }
+    
+    footer .col3 form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .col3 form input {
+        padding: 1rem 0;
+        margin: 1rem 0;
+        opacity: 0.8;
+    }
+    
+    footer .col3 form textarea {
+        padding: 1rem 0;
+        margin: 1rem 0;
+        opacity: 0.8;
+    }
+    
+    footer .col3 form button {
+        padding: 1rem 0;
+        margin: 1rem 0;
+        width: 10rem;
+        color: #fbcd28;
+        font-size: 1rem;
+        background-color: #222;
+        border: 1px solid #fff;
+        transition: 0.5s ease;
+    }
+    
+    footer .col3 form button:hover {
+        background-color: #fff;
+        color: #222;
+        transform: scale(0.8);
+    }
+    
+    footer .col3 form input::placeholder {
+        padding-left: 1rem;
+    }
+    
+    footer .col3 form textarea::placeholder {
+        padding-left: 1rem;
+    }
+    
+    footer .copyright {
+        border-top: 1px solid #fff;
+        text-align: center;
+    }
+    
+    footer .copyright p {
+        padding: 1rem;
+        color: #fff;
+    }
+    
+    footer .copyright span {
+        color: #fbcd28;
+    }
+    /*#endegen*/
